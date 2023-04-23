@@ -18,9 +18,3 @@ class JellyBean(Dessert):
         if self.flavor == 'black licorice':
             return False
         return True
-
-
-des = Dessert('myata', 400)
-gru = JellyBean('grusha', 20, 'black licorice')
-
-print(gru.is_healthy())
