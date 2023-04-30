@@ -12,7 +12,7 @@ def connect_dicts(dict1, dict2):
                 res_d[key] = value
 
         for key, value in high_d.items():
-            if value >= 10 and value > res_d.get(key, 0):
+            if value >= 10:
                 res_d[key] = value
 
         return res_d
@@ -22,4 +22,4 @@ def connect_dicts(dict1, dict2):
     else:
         updated_dict = update_with_filter_more_than_10(dict1, dict2)
 
-    return dict(sorted(updated_dict.items(), key=lambda x:x[1]))
+    return dict(sorted(updated_dict.items(), key=lambda x: x[1]))
