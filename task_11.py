@@ -23,6 +23,6 @@ class Dessert:
         self.__calories = value
 
     def is_healthy(self):
-        if self.calories < 200:
+        if isinstance(self.calories, (int, float)) and self.calories < 200:
             return True
         return False
